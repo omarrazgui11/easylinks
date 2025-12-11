@@ -332,7 +332,7 @@ newFolderBtn.addEventListener('click', () => {
     form.classList.add("formal-form");
     form.action = '/create_folder';
     form.innerHTML = `
-        <input class="form-control" type="text" name="folder_name" placeholder="Folder Name" required>
+        <input autocomplete="off" class="form-control" type="text" name="folder_name" placeholder="Folder Name" required>
         <button class="btn btn-primary" id="submit-folder-btn" type="submit">Create Link</button>
         <button class="btn btn-danger" type="button" id="cancel-folder-btn">Cancel</button>
     `;
