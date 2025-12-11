@@ -1,7 +1,20 @@
 {% extends "layout.html" %} 
 
 {% block main %}
-    <h1>Welcome to Easy Links!</h1>
-    <p>Your one-stop destination for learning something new, playing games, and watching videos.</p>
-    <h1>Hello world</h1>
+    <div class="index-main-div container">
+      <h1 class="hey-user">Hey {{ username }}</h1>
+      <div class="folders" id="folders" data-folder-id="{{ root_folder_id }}">
+
+        <ul id="items-list" class="items-list">
+          <!-- Folder and link items will be dynamically inserted here -->
+        </ul>
+        <button class="btn btn-primary" id="new-folder-btn">New folder</button>
+        <button class="btn btn-primary" id="new-link-btn">New link</button>
+      </div>
+    <script>
+      let dataFolderTree = {{ folders | tojson}};
+    </script>
+    <script src="static/mainscript.js">
+    </script>          
+    </div>
 {% endblock %}

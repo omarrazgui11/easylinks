@@ -4,3 +4,4 @@ cs50
 python-dotenv
 Flask-Bcrypt
 Authlib
+urllib3

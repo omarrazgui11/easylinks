@@ -8,3 +8,112 @@
     justify-content: center;
     align-items: center;
 }
+
+.small-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+#formal-form, .formal-form {
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: min(400px, 70vw);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.formal-form input, .formal-form-textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formal-form button {
+    margin: 10px;
+}
+
+.items-list {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.items-list li {
+    background-color: #fff;
+    margin: 0px 10px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    max-width: 500px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.items-list li:first-of-type {
+    border-top: 1px solid #ccc;
+}
+
+.items-list li:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.description-modal {
+    width: min(500px, 70vw);
+    display: block;
+}
+.three-dots-menu-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: min(60%, 30vw);
+    margin-top: 20px;
+
+}
+.three-dots-menu-content button {
+    margin-left: 10px;
+}
+.three-dots-menu {
+    padding: 10px 20px;
+}
+.three-dots-menu:hover {
+    background-color: #989292;
+}
+.index-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+.hey-user {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.hey-user, .back-btn {
+    text-align: left;
+}
